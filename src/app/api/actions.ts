@@ -3,16 +3,16 @@
 
 import { z } from "zod";
 
-type Error = {
-    name?: string;
-    email?: string;
-    message?: string
-}
+// type Error = {
+//     name?: string;
+//     email?: string;
+//     message?: string
+// }
 
-type initialState = {
-    message?: string;
-    errors?: Error;
-}
+// type initialState = {
+//     message?: string;
+//     errors?: Error;
+// }
 
 const contactFormSchema = z.object({
   name: z.string().trim().min(1, { message: "Name field is required" }),
